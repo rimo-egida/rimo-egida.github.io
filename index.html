@@ -96,63 +96,6 @@ layout: default
     </div>
 </section> <!-- /.team -->
 
-<!-- <section id="portfolio" class="section works">
-    <header>
-        <h4>Последние мероприятия</h4>
-    </header>
-
-    <div class="container">
-        <div class="text-center" >
-            <ul class="portfolio-filter">
-                <li class="active"><a class="btn btn-sm" href="#" data-filter="*">Все</a></li>
-                <li><a class="btn btn-sm" href="#" data-filter=".poster">Постеры</a></li>
-                <li><a class="btn btn-sm" href="#" data-filter=".gallery">Галереи</a></li>
-            </ul>
-        </div>
-        <div class="portfolio portfolio-masonry col-3 gutter">
-
-            {% for event in site.data.events %}
-                <div class="portfolio-item {{ event.type }}">
-                    <div class="thumb">
-
-                        {% if event.type == 'gallery' %}
-                            <div class="portfolio-slider">
-                                <ul class="slides">
-                                    {% for slide in event.gallery %}
-                                        <li>
-                                            <a href="{{ slide.photo }}" title="{{ slide.title }}">
-                                                <img src="{{ slide.photo }}" alt="{{ slide.title }}">
-                                            </a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        {% else %}
-                            <img src="{{ event.photo }}" alt="{{ event.name }}">
-                        {% endif %}
-
-                        <div class="portfolio-hover">
-                            <div class="vCenter">
-                                <div class="action-btn">
-                                    {% if event.type == 'gallery' %}
-                                        <a href="#"><i class="{{ event.icon }}"></i></a>
-                                    {% else %}
-                                        <a href="{{ event.url }}"><i class="{{ event.icon }}"></i></a>
-                                    {% endif %}
-                                </div>
-                                <div class="portfolio-description">
-                                    <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-
-        </div>
-    </div>
-</section> -->
-
 <!-- ============================================
             Call to action - 2
 ============================================== -->
