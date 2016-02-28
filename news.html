@@ -16,15 +16,18 @@ permalink: /news/
                                     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                                 </h4>
                                 <div class="main-description">
-                                    {{ post.content | truncatewords:100 }}
+                                    {% assign post_length = post.content | number_of_words %}
+                                    {{ post.content | truncatewords:150 }}
                                 </div>
                             </div>
                         </div>
                         <div class="blog-footer">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-read-more">
-                                Читать далее
-                                <span><i class="fa fa-angle-double-right"></i></span>
-                            </a>
+                            {% if post_length > 150 %}
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-read-more">
+                                    Читать далее
+                                    <span><i class="fa fa-angle-double-right"></i></span>
+                                </a>
+                            {% endif %}
                         </div>
                     </div>
                 {% endfor %}
