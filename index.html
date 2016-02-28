@@ -79,9 +79,9 @@ layout: default
                 {% for member in site.data.members %}
                     <div class="col-md-4 col-sm-6">
                         <div class="team-profile" style="background-image: url({{ member.photo | prepend: site.baseurl }})">
-                            <!-- <ul class="team-social list-unstyled">
-                            <li><a href="#" class="ion-social-facebook"></a></li>
-                            </ul> -->
+                            <ul class="team-social list-unstyled">
+                                <li><a href="{{ member.vk }}" class="fa fa-vk"></a></li>
+                            </ul>
                             <div class="team-intro">
                                 <h5>{{ member.name }}</h5>
                                 {% if member.position %}

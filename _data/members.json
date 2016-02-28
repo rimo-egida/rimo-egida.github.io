@@ -1,47 +1,56 @@
 [
   {
     "name": "Николай Лунченков",
+    "position": "Руководитель",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/lunchenkov.jpg",
-    "position": "Руководитель"
+    "vk": "https://vk.com/mrvood"
   },
   {
     "name": "Джулия Аракелян",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/arakelyan.jpg",
-    "position": ""
+    "vk": "https://vk.com/id222908705"
   },
   {
     "name": "Ольга Чивильгина",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/chivilgina.jpg",
-    "position": ""
+    "vk": "https://vk.com/olga_olka"
   },
   {
     "name": "Лилия Бадрутдинова",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/badrutdinova.jpg",
-    "position": ""
+    "vk": "https://vk.com/li_ba"
   },
   {
     "name": "Антонина Гришаева",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/grishaeva.jpg",
-    "position": ""
+    "vk": "https://vk.com/id49219507"
   },
   {
     "name": "Наталья Мещерякова",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/mescheryankova.jpg",
-    "position": ""
+    "vk": "https://vk.com/id151496056"
   },
   {
     "name": "Екатерина Петухова",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/petuhova.jpg",
-    "position": ""
+    "vk": "https://vk.com/id125419433"
   },
   {
     "name": "Ольга Гоголева",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/gogoleva.jpg",
-    "position": ""
+    "vk": "https://vk.com/id30216320"
   },
   {
     "name": "Евгений Хайтович",
+    "position": "",
     "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/team/haitovich.jpg",
-    "position": ""
+    "vk": "https://vk.com/e.khai"
   }
 ]
