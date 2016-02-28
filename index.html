@@ -1,1 +1,188 @@
-Hello World
+---
+layout: default
+---
+
+{% include intro.html %}
+
+<!-- ==================================
+		About Us
+ =================================== -->
+<section id="about-us" class="section bg white-bg">
+    <header>
+        <h4>О НАС</h4>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1">
+                <p class="text-center lead">
+                	{{ site.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =======================================
+                Our Goals
+========================================= -->
+<section id="goals" class="section mild-bg">
+    <header>
+        <h4>НАШИ ЦЕЛИ</h4>
+    </header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="goal-item">
+                    <div class="icon">
+                        <i class="icon-caution"></i>
+                    </div>
+                    <div class="goal-desc">
+                        <p>Привлечение внимания к проблеме эпидемии ВИЧ-инфекции в России среди молодежи.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="goal-item">
+                    <div class="icon">
+                        <i class="icon-megaphone"></i>
+                    </div>
+                    <div class="goal-desc">
+                        <p>Повышение уровня осведомленности общества о вопросах ВИЧ и других социально-значимых инфекций.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="goal-item">
+                    <div class="icon">
+                        <i class="icon-smile_emoticon"></i>
+                    </div>
+                    <div class="goal-desc">
+                        <p>Пропаганда здорового образа жизни среди молодежи.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- container -->
+</section> <!-- /#goals -->
+
+<section id="team" class="section team p-b-0 mild-bg">
+    <header>
+        <h4>Наша команда</h4>
+    </header>
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
+                {% for member in site.data.members %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-profile" style="background-image: url({{ member.photo | prepend: site.baseurl }})">
+                            <!-- <ul class="team-social list-unstyled">
+                            <li><a href="#" class="ion-social-facebook"></a></li>
+                            </ul> -->
+                            <div class="team-intro">
+                                <h5>{{ member.name }}</h5>
+                                {% if member.position %}
+                                    <p>{{ member.position }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section> <!-- /.team -->
+
+<!-- <section id="portfolio" class="section works">
+    <header>
+        <h4>Последние мероприятия</h4>
+    </header>
+
+    <div class="container">
+        <div class="text-center" >
+            <ul class="portfolio-filter">
+                <li class="active"><a class="btn btn-sm" href="#" data-filter="*">Все</a></li>
+                <li><a class="btn btn-sm" href="#" data-filter=".poster">Постеры</a></li>
+                <li><a class="btn btn-sm" href="#" data-filter=".gallery">Галереи</a></li>
+            </ul>
+        </div>
+        <div class="portfolio portfolio-masonry col-3 gutter">
+
+            {% for event in site.data.events %}
+                <div class="portfolio-item {{ event.type }}">
+                    <div class="thumb">
+
+                        {% if event.type == 'gallery' %}
+                            <div class="portfolio-slider">
+                                <ul class="slides">
+                                    {% for slide in event.gallery %}
+                                        <li>
+                                            <a href="{{ slide.photo }}" title="{{ slide.title }}">
+                                                <img src="{{ slide.photo }}" alt="{{ slide.title }}">
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% else %}
+                            <img src="{{ event.photo }}" alt="{{ event.name }}">
+                        {% endif %}
+
+                        <div class="portfolio-hover">
+                            <div class="vCenter">
+                                <div class="action-btn">
+                                    {% if event.type == 'gallery' %}
+                                        <a href="#"><i class="{{ event.icon }}"></i></a>
+                                    {% else %}
+                                        <a href="{{ event.url }}"><i class="{{ event.icon }}"></i></a>
+                                    {% endif %}
+                                </div>
+                                <div class="portfolio-description">
+                                    <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section> -->
+
+<!-- ============================================
+            Call to action - 2
+============================================== -->
+<section id="cta-8" class="section cta cta-8 base-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="cta-content">
+                    <h4>МЫ <i class="ion-heart"></i> НАШИХ ПАРТНЕРОВ</h4>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+</section>
+
+<!-- ========================================
+			Partner Logo
+========================================== -->
+<section id="partners" class="section partner mild-bg p-a-0">
+    <div class="container">
+        <div class="row">
+            {% for partner in site.data.partners %}
+              <div class="col-md-4 col-sm-6 p-a-0">
+                  <div class="partner-img">
+                      <a href="{{ partner.url }}">
+                        <img src="{{ partner.logo | prepend: site.baseurl }}" class="img-responsive center-block" data-placement="top" title="{{ partner.name }}" alt="{{ partner.name }}">
+                      </a>
+                  </div>
+              </div>
+            {% endfor %}
+        </div>
+    </div>
+</section> <!-- /.partner -->

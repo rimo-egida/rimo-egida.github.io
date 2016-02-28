@@ -1,0 +1,180 @@
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.125em;
+}
+
+blockquote {
+    font-size: 1em;
+}
+
+.menuzord .showhide em {
+    background: #fff;
+}
+
+ul.social-networks {
+    float: right;
+    list-style: none;
+    margin: 0;
+}
+
+ul.social-networks li {
+    display: inline;
+}
+
+ul.social-networks li a {
+    color: #fff;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    ul.social-networks {
+        text-align: center;
+        float: none;
+        padding: 0;
+    }
+}
+
+/* *************** index.html *************** */
+
+.site-header .intro h1 {
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 992px) {
+    .site-header .intro h1 {
+        font-size: 5.7em;
+    }
+
+    .site-header .intro p.subtitle {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .site-header .intro h1 {
+        font-size: 4.3em;
+    }
+
+    .site-header .intro p.subtitle {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .site-header .intro h1 {
+        font-size: 2.2em;
+    }
+
+    .site-header .intro p.subtitle {
+        font-size: 1.1em;
+    }
+}
+
+#about-us p {
+  color: #808080;
+}
+
+.lead {
+  font-size: 1.2em;
+}
+
+.lead:first-letter {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-right: 0;
+  float: none;
+}
+
+#goals {
+  padding-bottom: 0;
+}
+
+.goal-item {
+  position: relative;
+}
+
+.goal-item .icon {
+  color: #ff205a;
+  font-size: 31px;
+  position: absolute;
+}
+
+.goal-item .goal-desc {
+  padding: 0px 20px 0px 65px;
+  margin: 45px 0px;
+}
+
+.goal-item .goal-desc p {
+  font-size: 1.125em;
+  color: #808080;
+}
+
+@media only screen and (max-width: 767px) {
+  .goal-desc p {
+    /*font-size: 1.25em;*/
+  }
+  #cta-8, #partners {
+    display: none;
+  }
+}
+
+.team-profile .team-intro h5 {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.portfolio-description h5 {
+    text-transform: none;
+}
+
+.partner .partner-img {
+  height: 250px;
+  padding: 55px 0px;
+  /*border: 1px solid #E0E0E0;*/
+  margin-top: 0;
+  margin-right: -1px;
+}
+
+.partner .partner-img img {
+    opacity: 0.5;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.partner .partner-img img:hover {
+    opacity: 1;
+}
+
+
+.blog-standard .blog-title {
+    text-transform: none;
+}
+
+.blog-standard img {
+    display: block;
+    max-width: 100%;
+    max-height: 450px;
+    margin: 20px auto;
+}
+
+.blog-standard ul li {
+    font-size: 1.125em;
+    margin-bottom: 15px;
+}
+
+.blog-standard.multiple-blog .different-blog .blog-footer {
+    padding-bottom: 30px;
+}
+
+.blog-standard.multiple-blog .different-blog .blog-footer .btn-read-more {
+    padding-left: 0;
+    float: left;
+}

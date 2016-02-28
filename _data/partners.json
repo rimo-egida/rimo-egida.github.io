@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Департамент здравоохранения г. Москвы",
+    "logo": "/assets/images/partners/mosdep.png",
+    "url": "http://mosgorzdrav.ru/"
+  },
+  {
+    "name": "Национальная Вирусологическая Ассоциация",
+    "logo": "/assets/images/partners/nva.png",
+    "url": "http://www.nvassociation.ru/"
+  },
+  {
+    "name": "Первый МГМУ им. И.М. Сеченова",
+    "logo": "/assets/images/partners/mma.png",
+    "url": "http://www.mma.ru/"
+  },
+  {
+    "name": "МГИМО",
+    "logo": "/assets/images/partners/mgimo.png",
+    "url": "http://mgimo.ru/"
+  },
+  {
+    "name": "Российский национальный исследовательский медицинский университет им. Н.И. Пирогова",
+    "logo": "/assets/images/partners/rsmu.png",
+    "url": "http://rsmu.ru/"
+  },
+  {
+    "name": "Московский государственный медико-стоматологический университет",
+    "logo": "/assets/images/partners/msmsu.png",
+    "url": "http://www.msmsu.ru/"
+  }
+]

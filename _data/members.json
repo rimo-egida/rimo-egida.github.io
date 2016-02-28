@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Николай Лунченков",
+    "photo": "/assets/images/team/lunchenkov.jpg",
+    "position": "Руководитель"
+  },
+  {
+    "name": "Ольга Чивильгина",
+    "photo": "/assets/images/team/chivilgina.jpg",
+    "position": ""
+  },
+  {
+    "name": "Лилия Бадрутдинова",
+    "photo": "/assets/images/team/badrutdinova.jpg",
+    "position": ""
+  },
+  {
+    "name": "Евгений Хайтович",
+    "photo": "/assets/images/team/haitovich.jpg",
+    "position": ""
+  },
+  {
+    "name": "Екатерина Петухова",
+    "photo": "/assets/images/team/petuhova.jpg",
+    "position": ""
+  },
+  {
+    "name": "Джулия Аракелян",
+    "photo": "/assets/images/team/arakelyan.jpg",
+    "position": ""
+  },
+  {
+    "name": "Ольга Гоголева",
+    "photo": "/assets/images/team/gogoleva.jpg",
+    "position": ""
+  },
+  {
+    "name": "Антонина Гришаева",
+    "photo": "/assets/images/team/member.png",
+    "position": ""
+  },
+  {
+    "name": "Наталья Мещерякова",
+    "photo": "/assets/images/team/member.png",
+    "position": ""
+  }
+]

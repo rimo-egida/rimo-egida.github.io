@@ -1,0 +1,22 @@
+# General
+title: Российское инициативное молодежное общество "ЭГИДА"
+short_title: РИМО "ЭГИДА"
+email: admin@rimo-egida.ru
+description: > # this means to ignore newlines until "baseurl:"
+  Российское инициативное молодежное общество “ЭГИДА” организовано при поддержке Национальной вирусологической ассоциации и Московского городского центра профилактики и борьбы со СПИДом Департамента здравоохранения г. Москвы в декабре 2014 г. по итогам “Недели борьбы со СПИДом”.<br/><br/>
+  ЭГИДА - это самые активные студенты российских медицинских вузов от Москвы до Челябинска, не равнодушные к будущему своей страны и готовые к общественно-научной деятельности на добровольных началах.
+keywords: Российское, Инициативное, Молодежное, Общество, ЭГИДА, Национальная, Вирусологическая, Ассоциация, НВА
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://rimo-egida.ru" # the base hostname & protocol for your site
+
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://www.rimo-egida.ru" # the base hostname & protocol for your site
+
+# Build settings
+
+# Other
+markdown: kramdown
+timezone: Europe/Moscow
+exclude: ['LICENSE', 'README.md', 'Gemfile']
+gems:
+  - jekyll-sitemap

@@ -1,0 +1,43 @@
+[
+    {
+        "name": "День борьбы с энцефалитами",
+        "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/events/fight_encephalitis.jpg",
+        "type": "poster",
+        "icon": "icon-basic_link",
+        "url": "https://vk.com/rimo_egida?w=wall-101399496_81"
+    },
+    {
+        "name": "Социальный день борьбы с ВИЧ-инфекцией",
+        "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/events/soc_den_spid.jpg",
+        "type": "poster",
+        "icon": "icon-basic_link",
+        "url": "https://vk.com/rimo_egida?w=wall-101399496_53"
+    },
+    {
+        "name": "Дни борьбы со СПИДом",
+        "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/events/dni_borby_spid.jpg",
+        "type": "poster",
+        "icon": "icon-basic_link",
+        "url": "https://vk.com/rimo_egida?w=wall-101399496_42"
+    },
+    {
+        "name": "Велопробег \"Спорт против ВИЧ\"",
+        "type": "gallery",
+        "icon": "icon-basic_picture_multiple",
+        "url": "https://vk.com/rimo_egida?w=wall-101399496_16",
+        "gallery": [
+            {
+                "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/events/veloprobeg/1.jpg",
+                "title": ""
+            },
+            {
+                "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/events/veloprobeg/2.jpg",
+                "title": ""
+            },
+            {
+                "photo": "https://dl.dropboxusercontent.com/u/3599809/egida/events/veloprobeg/3.jpg",
+                "title": ""
+            }
+        ]
+    }
+]

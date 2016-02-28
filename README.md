@@ -1,1 +1,1 @@
-# rimo-egida.github.io
+# egida
