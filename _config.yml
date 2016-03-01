@@ -12,6 +12,7 @@ url: "http://rimo-egida.ru"
 # Build settings
 
 # Other
+excerpt_separator: <!--more-->
 markdown: kramdown
 timezone: Europe/Moscow
 exclude: ['LICENSE', 'README.md', 'Gemfile']

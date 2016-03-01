@@ -14,6 +14,14 @@ blockquote {
     font-size: 1em;
 }
 
+ol, ul {
+    font-size: 1.125em;
+}
+
+ol ul, ul ol {
+    font-size: inherit;
+}
+
 .menuzord .showhide em {
     background: #fff;
 }
@@ -157,9 +165,17 @@ ul.social-networks li a {
     opacity: 1;
 }
 
+/* ***************** /news/ ***************** */
 
 .blog-standard .blog-title {
+    text-align: center;
     text-transform: none;
+    margin: 30px 0 10px;
+}
+
+.blog-standard .tag {
+    text-align: center;
+    margin: 0 0 25px;
 }
 
 .blog-standard img {
@@ -169,13 +185,18 @@ ul.social-networks li a {
     margin: 20px auto;
 }
 
-.blog-standard ul li {
-    font-size: 1.125em;
-    margin-bottom: 15px;
+.blog-standard.multiple-blog .different-blog .blog-footer {
+    /*padding-bottom: 30px;*/
 }
 
-.blog-standard.multiple-blog .different-blog .blog-footer {
-    padding-bottom: 30px;
+.read-more {
+    padding-bottom: 20px;
+}
+
+.read-more a {
+    float: left;
+    letter-spacing: 0;
+    padding: 0;
 }
 
 .blog-standard.multiple-blog .different-blog .blog-footer .btn-read-more {
