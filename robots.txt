@@ -4,5 +4,8 @@ layout: null
 
 sitemap: {{ site.url | append: '/sitemap.xml' }}
 
+user-agent: *
+disallow: /assets/
+
 user-agent: EmailCollector
 disallow: /

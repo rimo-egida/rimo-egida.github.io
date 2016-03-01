@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include menu.html %}
+
 <header id="header" class="header-inner mild-bg">
     <div class="container">
         <h4 class="text-center">{{ page.title }}</h4>
@@ -9,6 +11,8 @@ layout: default
 </header>
 
 {{ content }}
+
+{% include footer.html %}
 
 <script>
     window.onload = function() {
