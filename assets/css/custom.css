@@ -204,6 +204,10 @@ ul.social-networks li a {
     float: left;
 }
 
+#owl-post {
+    margin-top: 15px;
+}
+
 #owl-post .item img {
     display: block;
     width: 100%;
