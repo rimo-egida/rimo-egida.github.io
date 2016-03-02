@@ -84,12 +84,14 @@ jQuery(document).ready(function($) {
     }
 
     // Make pause on mouseover
-    $elem.on('mouseover',function(){
-        isPause = true;
-    })
-    $elem.on('mouseout',function(){
-        isPause = false;
-    })
+    if ($elem) {
+        $elem.on('mouseover',function(){
+            isPause = true;
+        })
+        $elem.on('mouseout',function(){
+            isPause = false;
+        })
+    }
 
     //scroll to top
     // $('.scrollup').hide();

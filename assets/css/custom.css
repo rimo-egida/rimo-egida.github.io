@@ -214,6 +214,7 @@ ul.social-networks li a {
 
 #owl-post .owl-controls {
     position: relative;
+    right: 0;
 }
 
 #bar {
