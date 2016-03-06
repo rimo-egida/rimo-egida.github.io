@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
     "use strict";
 
     // tooltip
-    $('#partners a img, ul.social-networks li a').tooltip();
+    $('.partner-img a img, ul.social-networks li a').tooltip();
 
     $('#side-header.flexslider').flexslider({
         slideshowSpeed: 10000,

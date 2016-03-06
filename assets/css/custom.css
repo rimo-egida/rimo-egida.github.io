@@ -237,9 +237,9 @@ ul.social-networks li a {
 
 #conf-nav li a {
     color: #575757;
-    font-size: 1em;
+    font-size: 0.85em;
     font-weight: 500;
-    display: block;
+    padding: 5px 15px;
 }
 
 #conf-nav li.active {
@@ -254,8 +254,8 @@ ul.social-networks li a {
 #conf-nav li a:hover {
     color: #ff205a;
     background-color: #fff;
-    border-left: 2px solid #ff205a;
-    padding-left: 13px;
+    border-left: 1px solid #ff205a;
+    padding-left: 14px;
 }
 
 #conf-nav li a:focus {
@@ -269,7 +269,7 @@ ul.social-networks li a {
 }
 
 #conferention .section {
-    padding-bottom: 25px;
+    padding-bottom: 0;
 }
 
 #conferention .section:last-child {
@@ -278,4 +278,38 @@ ul.social-networks li a {
 
 #conferention .section h4 {
     margin-bottom: 30px;
+}
+
+#conf-about .team-profile {
+    min-height: 360px;
+    max-width: 260px;
+    margin: 0 auto 40px;
+}
+
+#conf-about .row:last-child {
+    margin-bottom: 0;
+}
+
+.step {
+  position: relative;
+}
+
+.step .icon {
+  color: #ff205a;
+  font-size: 28px;
+  position: absolute;
+}
+
+.step .desc {
+  padding: 0 20px 0 65px;
+  margin: 45px 0;
+}
+
+.step .desc p {
+  color: #808080;
+}
+
+#conf-partners .partner-img {
+    height: 180px;
+    padding: 10px 0;
 }

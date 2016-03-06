@@ -2,7 +2,16 @@
 layout: page
 title: Национальная школа инновационной вирусологии
 permalink: /virology-school/
+team:
+  - name: Николай Лунченков
+    position: Руководитель
+    photo: https://dl.dropboxusercontent.com/u/3599809/egida/team/lunchenkov.jpg
+    message: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+  - name: Джулия Аракелян
+    photo: https://dl.dropboxusercontent.com/u/3599809/egida/team/arakelyan.jpg
+    message: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
 ---
+
 <div id="conferention">
     <div class="container">
         <div class="row">
@@ -16,14 +25,38 @@ permalink: /virology-school/
 
                 <section id="conf-about" class="section">
                     <h4>О конференции в лицах</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
+                    {% for member in page.team %}
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="team-profile" style="background-image: url({{ member.photo }})">
+                                    <div class="team-intro">
+                                        <h5>{{ member.name }}</h5>
+                                        {% if member.position %}
+                                            <p>{{ member.position }}</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>{{ member.message }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </section>
 
                 <section id="conf-partners" class="section">
                     <h4>Организаторы и партнеры</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
+                    <div class="row">
+                        {% for partner in site.data.partners %}
+                          <div class="col-md-4 col-sm-6 p-a-0">
+                              <div class="partner-img">
+                                  <a href="{{ partner.url }}">
+                                    <img src="{{ partner.logo | prepend: site.baseurl }}" class="img-responsive center-block" data-placement="bottom" title="{{ partner.name }}" alt="{{ partner.name }}">
+                                  </a>
+                              </div>
+                          </div>
+                        {% endfor %}
+                    </div>
                 </section>
 
                 <section id="conf-schedule" class="section">
@@ -33,9 +66,91 @@ permalink: /virology-school/
                 </section>
 
                 <section id="conf-registration" class="section">
-                    <h4>Регистрация</h4>
+                    <h4 style="margin-bottom:10px">Регистрация</h4>
+                    <div class="registration-steps">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="step">
+                                    <div class="icon">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-circle-o fa-stack-2x"></i>
+                                            <strong class="fa-stack-1x">1</strong>
+                                        </span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="step">
+                                    <div class="icon">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-circle-o fa-stack-2x"></i>
+                                            <strong class="fa-stack-1x">2</strong>
+                                        </span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="step">
+                                    <div class="icon">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-circle-o fa-stack-2x"></i>
+                                            <strong class="fa-stack-1x">3</strong>
+                                        </span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="step">
+                                    <div class="icon">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-circle-o fa-stack-2x"></i>
+                                            <strong class="fa-stack-1x">4</strong>
+                                        </span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="step">
+                                    <div class="icon">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-circle-o fa-stack-2x"></i>
+                                            <strong class="fa-stack-1x">5</strong>
+                                        </span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="step">
+                                    <div class="icon">
+                                        <span class="fa-stack">
+                                            <i class="fa fa-circle-o fa-stack-2x"></i>
+                                            <strong class="fa-stack-1x">6</strong>
+                                        </span>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
+                    <h5>Форма регистрации</h5>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
                 </section>
