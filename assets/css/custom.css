@@ -235,6 +235,14 @@ ul.social-networks li a {
     top: 90px;
 }
 
+.slim-bg-nivs2016 {
+    background-image: url(../images/headers/nivs2016.jpg);
+}
+
+#conferention {
+    padding: 40px 0;
+}
+
 #conf-nav li a {
     color: #575757;
     font-size: 0.85em;
@@ -243,18 +251,18 @@ ul.social-networks li a {
 }
 
 #conf-nav li.active {
-    border-left: 3px solid #ff205a;
+    border-left: 3px solid #763b7b;
 }
 
 #conf-nav li.active a {
-    color: #ff205a;
+    color: #763b7b;
     padding-left: 12px;
 }
 
 #conf-nav li a:hover {
-    color: #ff205a;
+    color: #763b7b;
     background-color: #fff;
-    border-left: 1px solid #ff205a;
+    border-left: 1px solid #763b7b;
     padding-left: 14px;
 }
 
@@ -266,14 +274,6 @@ ul.social-networks li a {
     background-color: #fff;
     border-left: none;
     padding-left: 12px;
-}
-
-#conferention .section {
-    padding-bottom: 0;
-}
-
-#conferention .section:last-child {
-    padding-bottom: 80px;
 }
 
 #conferention .section h4 {
@@ -295,7 +295,7 @@ ul.social-networks li a {
 }
 
 .step .icon {
-  color: #ff205a;
+  color: #763b7b;
   font-size: 28px;
   position: absolute;
 }
@@ -309,7 +309,22 @@ ul.social-networks li a {
   color: #808080;
 }
 
+#conf-partners {
+    padding-top: 50px;
+}
+
 #conf-partners .partner-img {
-    height: 180px;
-    padding: 10px 0;
+    height: 215px;
+}
+
+#conf-schedule {
+    padding-top: 15px;
+}
+
+#conf-faq #accordion h4 {
+    margin-bottom: 0;
+}
+
+#conf-faq #accordion a:hover {
+    color: #763b7b;
 }
