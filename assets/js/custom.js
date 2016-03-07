@@ -9,6 +9,21 @@ jQuery(document).ready(function($) {
         touch: true
     });
 
+    // Countdown
+    if($(".container-countdown").length == 0) return;
+    $('.container-countdown').countdown({
+        date: "April 25, 2016 00:00:00",
+        render: function(data) {
+            var el = $(this.el);
+            el.empty()
+                .append("<p>ОСТАЛОСЬ</p>")
+                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.days, 2) + "</span><h6>Дней</h6></div>")
+                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.hours, 2) + "</span><h6>Часов</h6></div>")
+                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.min, 2) + "</span><h6>Минут</h6></div>")
+                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.sec, 2) + "</span><h6>Секунд</h6></div>");
+        }
+    });
+
     // own-carousel
     var time = 5; // time in seconds
 

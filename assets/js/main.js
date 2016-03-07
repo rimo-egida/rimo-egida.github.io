@@ -127,7 +127,7 @@ jQuery(document).ready(function(){
         	$nav.addClass('navbar-solid');
         	return;
         }
-        
+
         $nav.removeClass('navbar-solid');
         $(".navbar-nav > li > a").blur();
     }
@@ -149,7 +149,7 @@ jQuery(document).ready(function(){
 $(document).ready(function(){
 
     $('.menuzord-menu a[href*=#]:not([href=#]), .onPageNav').click(function() {
-       
+
         if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -158,7 +158,7 @@ $(document).ready(function(){
                 $('html,body').animate({
                     scrollTop: target.offset().top - 55
                 }, 1000, function(){
-                  
+
                 });
                 return false;
             }
@@ -203,7 +203,7 @@ $(window).load(function () {
 
 
 /*===================================
-    portfolio filter set active class    
+    portfolio filter set active class
  ===================================*/
 
 
@@ -666,25 +666,25 @@ $(document).ready(function(){
     Countdown Coming Soon
  ===================================*/
 
-$(document).ready(function(){
-    if($(".container-countdown").length == 0) return;
-
-    $('.container-countdown').countdown({
-        date: "December 15, 2015 00:00:00",
-        render: function(data) {
-            var el = $(this.el);
-            el.empty()
-                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.days, 2) + "</span><h6>Days</h6></div>")
-                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.hours, 2) + "</span><h6>Hours</h6></div>")
-                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.min, 2) + "</span><h6>Minutes</h6></div>")
-                .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.sec, 2) + "</span><h6>Seconds</h6></div>");
-        }
-    });
-});
+// $(document).ready(function(){
+//     if($(".container-countdown").length == 0) return;
+//
+//     $('.container-countdown').countdown({
+//         date: "December 15, 2015 00:00:00",
+//         render: function(data) {
+//             var el = $(this.el);
+//             el.empty()
+//                 .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.days, 2) + "</span><h6>Days</h6></div>")
+//                 .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.hours, 2) + "</span><h6>Hours</h6></div>")
+//                 .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.min, 2) + "</span><h6>Minutes</h6></div>")
+//                 .append("<div class='countdown-box'><span class='counter'>" + this.leadingZeros(data.sec, 2) + "</span><h6>Seconds</h6></div>");
+//         }
+//     });
+// });
 
 
 /*===================================
-    Lightbox gallery    
+    Lightbox gallery
  ===================================*/
 
 $(window).load(function () {
@@ -920,7 +920,7 @@ $(window).load(function () {
     function getDistance(p1, p2) {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
-    
+
 })();
 
 
@@ -933,7 +933,7 @@ $(window).load(function () {
 
     if(!$('#videoBackground').length) return;
     $("#videoBackground").mb_YTPlayer();
-     
+
     $('#video-play').click(function(event) {
         event.preventDefault();
         if ($(this).hasClass('fa-play')) {
@@ -1029,13 +1029,13 @@ $(window).load(function() {
 $(document).ready(function(){
     $('#dotNav > ul> li > a').tooltip({
         placement: 'left'
-    });   
+    });
 
     var sectionPosition = [];
     $('.section').each(function() {
         sectionPosition.push($(this).offset().top);
     });
-        
+
     $(document).scroll(function(){
         var position = $(document).scrollTop();
         var index;
@@ -1137,14 +1137,14 @@ initFluidParticles();
 
 jQuery(document).ready(function($){
     var isLateralNavAnimating = false;
-    
+
     //open/close lateral navigation
     $('.cd-nav-trigger').on('click', function(event){
         event.preventDefault();
-        //stop if nav animation is running 
+        //stop if nav animation is running
         if( !isLateralNavAnimating ) {
-            if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
-            
+            if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true;
+
             $('body').toggleClass('navigation-is-open');
             $('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                 //animation is over
@@ -1162,10 +1162,10 @@ jQuery(document).ready(function($){
     if(!$('#productLarge').length) return;
 
     $(document).ready(function() {
-     
+
       var sync1 = $("#productLarge");
       var sync2 = $("#productThumbnail");
-     
+
       sync1.owlCarousel({
         singleItem : true,
         slideSpeed : 1000,
@@ -1174,7 +1174,7 @@ jQuery(document).ready(function($){
         afterAction : syncPosition,
         responsiveRefreshRate : 200,
       });
-     
+
       sync2.owlCarousel({
         items : 4,
         itemsDesktopSmall     : [979,5],
@@ -1186,7 +1186,7 @@ jQuery(document).ready(function($){
           el.find(".owl-item").eq(0).addClass("synced");
         }
       });
-     
+
       function syncPosition(el){
         var current = this.currentItem;
         $("#productThumbnail")
@@ -1198,13 +1198,13 @@ jQuery(document).ready(function($){
           center(current)
         }
       }
-     
+
       $("#productThumbnail").on("click", ".owl-item", function(e){
         e.preventDefault();
         var number = $(this).data("owlItem");
         sync1.trigger("owl.goTo",number);
       });
-     
+
       function center(number){
         var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
         var num = number;
@@ -1214,7 +1214,7 @@ jQuery(document).ready(function($){
             var found = true;
           }
         }
-     
+
         if(found===false){
           if(num>sync2visible[sync2visible.length-1]){
             sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -1229,13 +1229,13 @@ jQuery(document).ready(function($){
         } else if(num === sync2visible[0]){
           sync2.trigger("owl.goTo", num-1)
         }
-        
+
       }
-     
+
     });
-    
+
 })();
-    
+
 
 
 /*=========================================================
@@ -1245,10 +1245,10 @@ jQuery(document).ready(function($){
 
     if(!$('#itemLarge').length) return;
     $(document).ready(function() {
-     
+
       var sync1 = $("#itemLarge");
       var sync2 = $("#itemThumbnail");
-     
+
       sync1.owlCarousel({
         singleItem : true,
         slideSpeed : 1000,
@@ -1257,7 +1257,7 @@ jQuery(document).ready(function($){
         afterAction : syncPosition,
         responsiveRefreshRate : 200,
       });
-     
+
       sync2.owlCarousel({
         items : 6,
         itemsDesktop      : [1199,6],
@@ -1270,7 +1270,7 @@ jQuery(document).ready(function($){
           el.find(".owl-item").eq(0).addClass("synced");
         }
       });
-     
+
       function syncPosition(el){
         var current = this.currentItem;
         $("#itemThumbnail")
@@ -1282,13 +1282,13 @@ jQuery(document).ready(function($){
           center(current)
         }
       }
-     
+
       $("#itemThumbnail").on("click", ".owl-item", function(e){
         e.preventDefault();
         var number = $(this).data("owlItem");
         sync1.trigger("owl.goTo",number);
       });
-     
+
       function center(number){
         var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
         var num = number;
@@ -1298,7 +1298,7 @@ jQuery(document).ready(function($){
             var found = true;
           }
         }
-     
+
         if(found===false){
           if(num>sync2visible[sync2visible.length-1]){
             sync2.trigger("owl.goTo", num - sync2visible.length+2)
@@ -1313,12 +1313,12 @@ jQuery(document).ready(function($){
         } else if(num === sync2visible[0]){
           sync2.trigger("owl.goTo", num-1)
         }
-        
+
       }
-     
+
     });
 })();
-    
+
 
 
 
