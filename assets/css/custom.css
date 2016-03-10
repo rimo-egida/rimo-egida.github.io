@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu", Helvetica, sans-serif;
 }
 
+h2 {
+    font-size: 54px;
+}
+
 p {
     font-size: 1.125em;
 }
@@ -50,6 +54,12 @@ ul.social-networks li a {
         text-align: center;
         float: none;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 36px;
     }
 }
 
@@ -243,42 +253,42 @@ ul.social-networks li a {
     top: 90px;
 }
 
-.slim-bg-nivs2016 {
-    background-image: url(../images/headers/nivs2016.jpg);
+.slim-bg-purple {
+    background-image: url(../images/headers/purple.jpg);
 }
 
 #conferention {
     padding: 40px 0;
 }
 
-#conf-nav li a {
+#program-nav li a {
     color: #575757;
     font-size: 0.85em;
     font-weight: 500;
     padding: 5px 15px;
 }
 
-#conf-nav li.active {
+#program-nav li.active {
     border-left: 3px solid #763b7b;
 }
 
-#conf-nav li.active a {
+#program-nav li.active a {
     color: #763b7b;
     padding-left: 12px;
 }
 
-#conf-nav li a:hover {
+#program-nav li a:hover {
     color: #763b7b;
     background-color: #fff;
     border-left: 1px solid #763b7b;
     padding-left: 14px;
 }
 
-#conf-nav li a:focus {
+#program-nav li a:focus {
     background-color: #fff;
 }
 
-#conf-nav li.active a:hover {
+#program-nav li.active a:hover {
     background-color: #fff;
     border-left: none;
     padding-left: 12px;
@@ -288,14 +298,18 @@ ul.social-networks li a {
     margin-bottom: 30px;
 }
 
-#conf-about .team-profile {
+#program-about .team-profile {
     min-height: 360px;
     max-width: 260px;
     margin: 0 auto 40px;
 }
 
-#conf-about .row:last-child {
+#program-about .row:last-child {
     margin-bottom: 0;
+}
+
+#program-schedule table caption {
+    color: #763b7b;
 }
 
 .step {
@@ -317,22 +331,18 @@ ul.social-networks li a {
   color: #808080;
 }
 
-#conf-partners {
-    padding-top: 50px;
-}
-
-#conf-partners .partner-img {
+#program-partners .partner-img {
     height: 215px;
 }
 
-#conf-schedule {
-    padding-top: 15px;
+#program-partners {
+    padding-bottom: 0;
 }
 
-#conf-faq #accordion h4 {
+#program-faq #accordion h4 {
     margin-bottom: 0;
 }
 
-#conf-faq #accordion a:hover {
+#program-faq #accordion a:hover {
     color: #763b7b;
 }
