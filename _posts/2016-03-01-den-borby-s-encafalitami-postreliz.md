@@ -1,6 +1,6 @@
 ---
-title:  День борьбы с энцефалитами. Пострелиз
-date:   2016-03-01 16:00:00 +0000
+title:    День борьбы с энцефалитами. Пострелиз
+date:     2016-03-01 16:00:00 +0000
 keywords: римо, римо эгида, нва, энцефалиты, rimo, rimo egida, nva
 photos:
   - src: https://dl.dropboxusercontent.com/u/3599809/egida/news/2016/03/01/photo_1.jpg
