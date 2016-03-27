@@ -213,11 +213,11 @@ ul.social-networks li a {
     float: left;
 }
 
-#owl-post {
-    margin-top: 15px;
+.owl-post {
+    margin-top: 20px;
 }
 
-#owl-post .item img {
+.owl-post .item img {
     display: block;
     width: 100%;
     height: auto;
@@ -225,21 +225,14 @@ ul.social-networks li a {
     margin-top: 0;
 }
 
-#owl-post .owl-controls {
+.owl-post .owl-controls {
+    margin-top: -15px;
+}
+
+.owl-controls {
     position: relative;
+    bottom: 0;
     right: 0;
-}
-
-#bar {
-    width: 0%;
-    max-width: 100%;
-    height: 4px;
-    background: #ff205a;
-}
-
-#progressBar {
-    width: 100%;
-    background: #ededed;
 }
 
 /* ************* /conferention/ ************* */
@@ -251,6 +244,10 @@ ul.social-networks li a {
 
 .affix {
     top: 90px;
+}
+
+#ivep2016 h4 {
+    margin-bottom: 15px;
 }
 
 .slim-bg-purple {
@@ -306,6 +303,22 @@ ul.social-networks li a {
 
 #program-about .row:last-child {
     margin-bottom: 0;
+}
+
+.owl-speakers .item {
+    /*height:*/
+}
+
+.owl-speakers .item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+.owl-speakers .item h4 {
+    font-size: 1.3em;
+    margin-top: 0;
 }
 
 #program-schedule table caption {

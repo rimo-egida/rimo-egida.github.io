@@ -3,14 +3,13 @@ layout: default
 title: Образовательная программа инновационной вирусологии
 permalink: /ivep2016/
 
-team:
-  - name: Николай Лунченков
-    position: Руководитель
-    photo: https://dl.dropboxusercontent.com/u/3599809/egida/team/lunchenkov.jpg
-    message: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-  - name: Джулия Аракелян
-    photo: https://dl.dropboxusercontent.com/u/3599809/egida/team/arakelyan.jpg
-    message: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+speakers:
+  - name:    Николай Лунченков
+    photo:   https://dl.dropboxusercontent.com/u/3599809/egida/team/lunchenkov.jpg
+    about:   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+  - name:    Джулия Аракелян
+    photo:   https://dl.dropboxusercontent.com/u/3599809/egida/team/arakelyan.jpg
+    about:   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
 
 schedule:
   - date: Понедельник, 25 апреля
@@ -68,6 +67,18 @@ schedule:
      - time: 17:00 - 18:00
        desc: Закрытие. Награждение
 
+registration-steps:
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.
+
+faq:
+  - question: 111
+    answer:   222
+
 ---
 
 {% include menu.html %}
@@ -83,7 +94,7 @@ schedule:
     </div>
 </header>
 
-<section id="programerention" class="section">
+<section id="ivep2016" class="section">
     <div class="container">
         <div class="row">
 
@@ -94,25 +105,21 @@ schedule:
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
                 </div>
 
-                <div id="program-about" class="section">
-                    <h4>О программе в лицах</h4>
-                    {% for member in page.team %}
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="team-profile" style="background-image: url({{ member.photo }})">
-                                    <div class="team-intro">
-                                        <h5>{{ member.name }}</h5>
-                                        {% if member.position %}
-                                            <p>{{ member.position }}</p>
-                                        {% endif %}
-                                    </div>
+                <div id="program-speakers" class="section">
+                    <h4>Спикеры</h4>
+                    <div class="owl-speakers owl-carousel owl-theme">
+                        {% for speaker in page.speakers %}
+                            <div class="row item">
+                                <div class="col-sm-4">
+                                    <img src="{{ speaker.photo }}" alt="">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h4>{{ speaker.name }}</h4>
+                                    <p>{{ speaker.about }}</p>
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                <p>{{ member.message }}</p>
-                            </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
 
                 <div id="program-partners" class="section">
@@ -157,84 +164,21 @@ schedule:
                     <h4 style="margin-bottom:10px">Регистрация</h4>
                     <div class="registration-steps">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="step">
-                                    <div class="icon">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-circle-o fa-stack-2x"></i>
-                                            <strong class="fa-stack-1x">1</strong>
-                                        </span>
-                                    </div>
-                                    <div class="desc">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="step">
-                                    <div class="icon">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-circle-o fa-stack-2x"></i>
-                                            <strong class="fa-stack-1x">2</strong>
-                                        </span>
-                                    </div>
-                                    <div class="desc">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
+                            {% for step in page.registration-steps %}
+                                <div class="col-md-6">
+                                    <div class="step">
+                                        <div class="icon">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-circle-o fa-stack-2x"></i>
+                                                <strong class="fa-stack-1x">{{ forloop.index }}</strong>
+                                            </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p>{{ step }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="step">
-                                    <div class="icon">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-circle-o fa-stack-2x"></i>
-                                            <strong class="fa-stack-1x">3</strong>
-                                        </span>
-                                    </div>
-                                    <div class="desc">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="step">
-                                    <div class="icon">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-circle-o fa-stack-2x"></i>
-                                            <strong class="fa-stack-1x">4</strong>
-                                        </span>
-                                    </div>
-                                    <div class="desc">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="step">
-                                    <div class="icon">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-circle-o fa-stack-2x"></i>
-                                            <strong class="fa-stack-1x">5</strong>
-                                        </span>
-                                    </div>
-                                    <div class="desc">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="step">
-                                    <div class="icon">
-                                        <span class="fa-stack">
-                                            <i class="fa fa-circle-o fa-stack-2x"></i>
-                                            <strong class="fa-stack-1x">6</strong>
-                                        </span>
-                                    </div>
-                                    <div class="desc">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis porta lorem, ut tincidunt elit.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
 
@@ -334,7 +278,7 @@ schedule:
                 <nav id="program-nav" class="scrollspy hidden-xs hidden-sm" data-spy="affix" data-offset-top="485">
                     <ul class="nav">
                         <li><a href="#program-description">Описание</a></li>
-                        <li><a href="#program-about">О программе в лицах</a></li>
+                        <li><a href="#program-speakers">Спикеры</a></li>
                         <li><a href="#program-partners">Организаторы и партнеры</a></li>
                         <li><a href="#program-schedule">Расписание</a></li>
                         <li><a href="#program-registration">Регистрация</a></li>
@@ -346,5 +290,16 @@ schedule:
         </div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function() {
+        $(".owl-speakers").owlCarousel({
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true
+        });
+    });
+</script>
 
 {% include footer.html %}

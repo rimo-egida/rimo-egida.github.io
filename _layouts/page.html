@@ -17,5 +17,13 @@ layout: default
 <script>
     window.onload = function() {
         $('#topNavBar').addClass('solid');
+
+        $(".owl-post").owlCarousel({
+            items: 1,
+            animateOut: 'fadeOut',
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true
+        });
     };
 </script>

@@ -40,7 +40,7 @@ photos:
 
 Молодёжный комитет НВА принимает экспертное и представительское участие в работе профильной рабочей группы Форума во все дни его проведения (до 19 марта).
 
-<div id="owl-post" class="owl-carousel">
+<div class="owl-post owl-carousel">
     {% for photo in page.photos %}
         <div class="item"><img src="{{ photo.src }}" alt="{{ photo.alt }}"></div>
     {% endfor %}

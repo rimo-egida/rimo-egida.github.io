@@ -13,24 +13,7 @@
 
     </div><!--/#zwrapper-->
 
-    <!-- Javascripts
-    ============================================= -->
-    <script src="{{ "/assets/lib/components-modernizr/modernizr.js" | prepend: site.baseurl }}"></script>
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="{{ "/assets/lib/imagesloaded/imagesloaded.pkgd.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/lib/animsition/dist/js/animsition.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/lib/magnific-popup/dist/jquery.magnific-popup.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/lib/FlexSlider/jquery.flexslider.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/lib/isotope/dist/isotope.pkgd.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/lib/owlcarousel/owl-carousel/owl.carousel.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/lib/countdown/dest/jquery.countdown.min.js" | prepend: site.baseurl }}"></script>
+    {% include scripts.html %}
 
-    <script src="{{ "/assets/js/plugins.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/js/custom.js" | prepend: site.baseurl }}"></script>
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35727920 = new Ya.Metrika({ id:35727920, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/35727920" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  </body>
+    </body>
 </html>
