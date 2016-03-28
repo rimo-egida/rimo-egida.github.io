@@ -328,6 +328,7 @@ ul.social-networks li a {
 
 .step {
   position: relative;
+  margin-bottom: 35px;
 }
 
 .step .icon {
@@ -338,7 +339,7 @@ ul.social-networks li a {
 
 .step .desc {
   padding: 0 20px 0 65px;
-  margin: 20px 0;
+  /*margin: 20px 0;*/
 }
 
 .step .desc p {
