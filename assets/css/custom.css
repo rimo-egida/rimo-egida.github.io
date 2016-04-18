@@ -19,7 +19,7 @@ blockquote {
 }
 
 ol, ul {
-    font-size: 1.125em;
+    font-size: 16px;
 }
 
 ol ul, ul ol {
@@ -352,12 +352,4 @@ ul.social-networks li a {
 
 #program-partners {
     padding-bottom: 0;
-}
-
-#program-faq #accordion h4 {
-    margin-bottom: 0;
-}
-
-#program-faq #accordion a:hover {
-    color: #763b7b;
 }

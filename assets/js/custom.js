@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
     // Countdown
     if($(".container-countdown").length == 0) return;
     $('.container-countdown').countdown({
-        date: "April 25, 2016 00:00:00",
+        date: "May 16, 2016 00:00:00",
         render: function(data) {
             var el = $(this.el);
             el.empty()
