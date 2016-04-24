@@ -261,38 +261,30 @@ partners:
                     <h5>Форма регистрации</h5>
 
                     <div>
-                        <!-- <form action="https://getsimpleform.com/messages?form_api_token=de877d018244c5805a8eb96e9e37e652" method="post"> -->
-                          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-                          <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /> -->
-                          <!-- all your input fields here.... -->
-                          <!-- <input type='text' name='test' /> -->
-                          <!-- <input type='submit' value='Test form' /> -->
-                        <!-- </form> -->
-
                         <p>С 16 по 19 мая 2016 г. Российское Инициативное Молодежное Общество "ЭГИДА" при поддержке Московского городского центра профилактики и борьбы со СПИДом и Национальной Вирусологической Ассоциации проводит Всероссийскую молодежную образовательную программу "Инновационная вирусология".</p>
 
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-1">
-                                <form class="form-horizontal program-registration-form">
+                            <div class="col-md-10">
+                                <form id="program-registration-form" class="form-horizontal" data-parsley-validate="">
 
                                     <div class="form-group">
-                                        <label for="lastname" class="col-sm-5 control-label">Фамилия</label>
+                                        <label for="lastname" class="col-sm-5 control-label">Фамилия <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Фамилия">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Фамилия" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="firstname" class="col-sm-5 control-label">Имя</label>
+                                        <label for="firstname" class="col-sm-5 control-label">Имя <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Имя">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Имя" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="middlename" class="col-sm-5 control-label">Отчество</label>
+                                        <label for="middlename" class="col-sm-5 control-label">Отчество <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="middlename" name="middlename" placeholder="Отчество">
+                                            <input type="text" class="form-control" id="middlename" name="middlename" placeholder="Отчество" required>
                                         </div>
                                     </div>
 
@@ -300,6 +292,7 @@ partners:
                                         <label for="sex" class="col-sm-5 control-label">Пол</label>
                                         <div class="col-sm-7" style="padding-top:6px">
                                             <select name="sex" id="sex">
+                                                <option value="">Выбрать</option>
                                                 <option value="male">Мужской</option>
                                                 <option value="female">Женский</option>
                                             </select>
@@ -314,23 +307,23 @@ partners:
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="nationality" class="col-sm-5 control-label">Гражданство</label>
+                                        <label for="nationality" class="col-sm-5 control-label">Гражданство <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Гражданство">
+                                            <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Гражданство" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="country" class="col-sm-5 control-label">Страна проживания</label>
+                                        <label for="country" class="col-sm-5 control-label">Страна проживания <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="country" name="country" placeholder="Страна проживания">
+                                            <input type="text" class="form-control" id="country" name="country" placeholder="Страна проживания" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="city" class="col-sm-5 control-label">Город</label>
+                                        <label for="city" class="col-sm-5 control-label">Город <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="city" name="city" placeholder="Город">
+                                            <input type="text" class="form-control" id="city" name="city" placeholder="Город" required>
                                         </div>
                                     </div>
 
@@ -342,9 +335,9 @@ partners:
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="email" class="col-sm-5 control-label">Электронный адрес</label>
+                                        <label for="email" class="col-sm-5 control-label">Электронный адрес <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Электронный адрес">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Электронный адрес" data-parsley-trigger="change" required>
                                         </div>
                                     </div>
 
@@ -356,30 +349,30 @@ partners:
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="university" class="col-sm-5 control-label">Ваше учебное заведение</label>
+                                        <label for="vuz" class="col-sm-5 control-label">Ваше учебное заведение <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="university" name="university" placeholder="Ваше учебное заведение">
+                                            <input type="text" class="form-control" id="vuz" name="vuz" placeholder="Ваше учебное заведение" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="faculty" class="col-sm-5 control-label">Факультет</label>
+                                        <label for="faculty" class="col-sm-5 control-label">Факультет <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="faculty" name="faculty" placeholder="Факультет">
+                                            <input type="text" class="form-control" id="faculty" name="faculty" placeholder="Факультет" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="year" class="col-sm-5 control-label">Курс</label>
+                                        <label for="study-year" class="col-sm-5 control-label">Курс <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="year" name="year" placeholder="Курс">
+                                            <input type="text" class="form-control" id="study-year" name="study-year" placeholder="Курс" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="motivation" class="col-sm-5 control-label">Мотивационное письмо</label>
+                                        <label for="motivation" class="col-sm-5 control-label">Мотивационное письмо <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <textarea rows="5" cols="38" id="motivation" name="motivation" placeholder="Мотивационное письмо" data-toggle="popover" data-content="Внимание! Мотивационное письмо является Вашим пропуском на образовательную программу. Уделите особое внимание его написанию. Объем письма: 200 - 250 слов."></textarea>
+                                            <textarea rows="5" cols="38" id="motivation" name="motivation" placeholder="Мотивационное письмо" required data-toggle="popover" data-content="Внимание! Мотивационное письмо является Вашим пропуском на образовательную программу. Уделите особое внимание его написанию. Объем письма: 200 - 250 слов."></textarea>
                                         </div>
                                     </div>
 
@@ -388,38 +381,37 @@ partners:
                                     <p><strong>Подача тезиса</strong></p>
 
                                     <div class="form-group">
-                                        <label for="thesis-title" class="col-sm-5 control-label">Название</label>
+                                        <label for="thesis-title" class="col-sm-5 control-label">Название <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="thesis-title" name="thesis-title" placeholder="Название исследовательской работы">
+                                            <input type="text" class="form-control" id="thesis-title" name="thesis-title" placeholder="Название исследовательской работы" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="thesis-authors" class="col-sm-5 control-label">Автор(ы)</label>
+                                        <label for="thesis-authors" class="col-sm-5 control-label">Автор(ы) <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="thesis-authors" name="thesis-authors" placeholder="Автор(ы)">
+                                            <input type="text" class="form-control" id="thesis-authors" name="thesis-authors" placeholder="Автор(ы)" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="thesis-mentor" class="col-sm-5 control-label">Научный руководитель</label>
+                                        <label for="thesis-mentor" class="col-sm-5 control-label">Научный руководитель <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="thesis-mentor" name="thesis-mentor" placeholder="Должность, ученое звание, Фамилия И.О.">
+                                            <input type="text" class="form-control" id="thesis-mentor" name="thesis-mentor" placeholder="Должность, ученое звание, Фамилия И.О." required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="thesis-university" class="col-sm-5 control-label">Вуз</label>
+                                        <label for="thesis-vuz" class="col-sm-5 control-label">Вуз <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <input type="text" class="form-control" id="thesis-university" name="thesis-university" placeholder="Вуз">
+                                            <input type="text" class="form-control" id="thesis-vuz" name="thesis-vuz" placeholder="Вуз" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="thesis-text" class="col-sm-5 control-label">Текст тезиса</label>
+                                        <label for="thesis-text" class="col-sm-5 control-label">Текст тезиса <st>*</st></label>
                                         <div class="col-sm-7">
-                                            <!-- <input type="text" class="form-control" id="thesis-text" name="thesis-text" placeholder="Текст тезиса"> -->
-                                            <textarea rows="5" cols="38" id="thesis-text" name="thesis-text" placeholder="Текст тезиса"></textarea>
+                                            <textarea rows="5" cols="38" id="thesis-text" name="thesis-text" placeholder="Текст тезиса" required></textarea>
                                         </div>
                                     </div>
 
@@ -431,15 +423,7 @@ partners:
                                 </form>
                             </div>
                         </div>
-
-                        <!-- <form action="https://formspree.io/info@rimo-egida.ru" method="POST">
-                            <input type="text" name="name">
-                            <input type="email" name="_replyto">
-                            <input type="submit" value="Send">
-                        </form> -->
                     </div>
-
-                    <!-- <p><iframe src="https://docs.google.com/forms/d/1myxSpCXUwhuoZVQHPZb6lLVbT55kzJK0u3oWX4isQ44/viewform?embedded=true#responses" width="845" height="750" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe></p> -->
                 </div>
 
                 <div id="program-partners" class="section hidden-xs hidden-sm">
@@ -510,6 +494,31 @@ partners:
         });
 
         $('input, textarea').popover();
+
+        Parsley.addMessages('ru', {
+            defaultMessage: "Некорректное значение",
+            required:       "Обязательное поле"
+        });
+        Parsley.setLocale('ru');
+
+        $('#program-registration-form').parsley().on('form:submit', function() {
+            var data = {};
+
+            $(this.fields).each(function(idx, item) {
+                data[item.$element.context.id] = item.value;
+            });
+
+            $.ajax({
+                url: "https://formspree.io/info@rimo-egida.ru",
+                method: "POST",
+                data: data,
+                dataType: "json"
+            });
+
+            this.$element.parent().parent().html('<div class="col-sm-12"><div class="alert alert-success" role="success"><p class="lead">Ваша заявка успешно отправлена!</p></div></div>')
+
+            return false;
+        });
     });
 </script>
 

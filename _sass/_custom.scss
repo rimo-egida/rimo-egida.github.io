@@ -358,7 +358,7 @@ ul.social-networks li a {
   color: #808080;
 }
 
-#program-registration .program-registration-form {
+#program-registration #program-registration-form {
     margin-top: 15px;
 }
 
@@ -370,11 +370,27 @@ ul.social-networks li a {
     padding-bottom: 0;
 }
 
-#program-registration .program-registration-form .btn-cal-default {
+#program-registration #program-registration-form st {
+    color: red;
+}
+
+#program-registration #program-registration-form .btn-cal-default {
     background: $ivep2016-accent-color;
 }
 
-#program-registration .program-registration-form .btn-cal-default:hover {
+#program-registration #program-registration-form .btn-cal-default:hover,
+#program-registration #program-registration-form .btn-cal-default:focus {
     background-color: lighten($ivep2016-accent-color, 10);
     border-color: $ivep2016-accent-color;
+}
+
+ul.parsley-errors-list {
+    list-style-type: none;
+    padding-left: 14px;
+    padding-top: 2px;
+}
+
+ul.parsley-errors-list li {
+    font-size: 14px;
+    color: #ff205a;
 }
