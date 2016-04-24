@@ -1,3 +1,7 @@
+$ivep2016-accent-color: #763b7b;
+
+
+/* Basic (re-defined) styles */
 body {
   font-family: "Roboto", Helvetica, sans-serif;
 }
@@ -24,6 +28,14 @@ ol, ul {
 
 ol ul, ul ol {
     font-size: inherit;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 2px !important;
+    color: #555;
+    font-size: 14px;
+    padding: 6px 12px;
 }
 
 .menuzord .showhide em {
@@ -236,7 +248,7 @@ ul.social-networks li a {
     right: 0;
 }
 
-/* ************* /conferention/ ************* */
+/* ************* /ivep2016/ ************* */
 
 .affix-top {
     /*margin-top: 20px;*/
@@ -267,18 +279,18 @@ ul.social-networks li a {
 }
 
 #program-nav li.active {
-    border-left: 3px solid #763b7b;
+    border-left: 3px solid $ivep2016-accent-color;
 }
 
 #program-nav li.active a {
-    color: #763b7b;
+    color: $ivep2016-accent-color;
     padding-left: 12px;
 }
 
 #program-nav li a:hover {
-    color: #763b7b;
+    color: $ivep2016-accent-color;
     background-color: #fff;
-    border-left: 1px solid #763b7b;
+    border-left: 1px solid $ivep2016-accent-color;
     padding-left: 14px;
 }
 
@@ -323,7 +335,7 @@ ul.social-networks li a {
 }
 
 #program-schedule table caption {
-    color: #763b7b;
+    color: $ivep2016-accent-color;
 }
 
 .step {
@@ -332,7 +344,7 @@ ul.social-networks li a {
 }
 
 .step .icon {
-  color: #763b7b;
+  color: $ivep2016-accent-color;
   font-size: 28px;
   position: absolute;
 }
@@ -346,10 +358,23 @@ ul.social-networks li a {
   color: #808080;
 }
 
+#program-registration .program-registration-form {
+    margin-top: 15px;
+}
+
 #program-partners .partner-img {
     height: 215px;
 }
 
 #program-partners {
     padding-bottom: 0;
+}
+
+#program-registration .program-registration-form .btn-cal-default {
+    background: $ivep2016-accent-color;
+}
+
+#program-registration .program-registration-form .btn-cal-default:hover {
+    background-color: lighten($ivep2016-accent-color, 10);
+    border-color: $ivep2016-accent-color;
 }
