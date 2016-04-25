@@ -111,8 +111,12 @@ partners:
     <div class="slim-bg-purple overlay-01 parallax-hero" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#site-header"></div>
     <div class="valign-center">
         <div class="container">
-            <div class="intro text-center">
-                <h2>{{ page.title }}</h2>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="intro text-center">
+                        <h2>{{ page.title }}</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -213,7 +217,7 @@ partners:
                     </div>
                 </div> -->
 
-                <!-- <div id="program-schedule" class="section">
+                <div id="program-schedule" class="section">
                     <h4>Расписание</h4>
                     {% for day in page.schedule %}
                         <table class="table table-bordered">
@@ -234,7 +238,7 @@ partners:
                             </tbody>
                         </table>
                     {% endfor %}
-                </div> -->
+                </div>
 
                 <div id="program-registration" class="section">
                     <h4 style="margin-bottom:10px">Регистрация</h4>
@@ -472,7 +476,7 @@ partners:
                         <li><a href="#program-description">Описание</a></li>
                         <li><a href="#program-topics">Ключевые темы</a></li>
                         <!-- <li><a href="#program-speakers">Спикеры</a></li> -->
-                        <!-- <li><a href="#program-schedule">Расписание</a></li> -->
+                        <li><a href="#program-schedule">Расписание</a></li>
                         <li><a href="#program-registration">Регистрация</a></li>
                         <li><a href="#program-partners">Организаторы и партнеры</a></li>
                         <li><a href="#program-location">Место проведения</a></li>
