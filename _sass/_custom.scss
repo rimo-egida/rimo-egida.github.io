@@ -81,9 +81,13 @@ ul.social-networks li a {
     font-weight: 300;
 }
 
+.site-header .intro p {
+    margin-bottom: 30px;
+}
+
 @media only screen and (min-width: 992px) {
     .site-header .intro h1 {
-        font-size: 5.7em;
+        font-size: 4.7em;
     }
 
     .site-header .intro p.subtitle {
